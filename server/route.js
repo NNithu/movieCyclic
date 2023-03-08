@@ -3,7 +3,7 @@ import { addMovie, deleteMovie, editMovie, getMovieById, getMovies } from '../co
 
 const router = express.Router();
 
-router.get('/api/', getMovies);
+router.get('/', getMovies);
 router.post('/api/add', addMovie);
 router.get('/api/:id', getMovieById);
 router.put('/api/:id', editMovie);
